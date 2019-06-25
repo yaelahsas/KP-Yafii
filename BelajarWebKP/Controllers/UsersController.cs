@@ -8,9 +8,9 @@ namespace BelajarWebKP.Controllers
         // 
         // GET: /HelloWorld/
 
-        public string Index()
+        public IActionResult Index()
         {
-                return "Selamat Datang" ;
+            return View();
         }
 
 
