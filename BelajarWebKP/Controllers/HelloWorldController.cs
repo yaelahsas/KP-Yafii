@@ -20,5 +20,11 @@ namespace BelajarWebKP.Controllers
         {
             return "This is the Welcome action method...";
         }
+
+        public string Sastra(){
+
+            return "My Name Is Sastra";
+
+        }
     }
 }
