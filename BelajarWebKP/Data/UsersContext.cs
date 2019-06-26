@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BelajarWebKP.Models
 {
-    public class MvcUsersContex : DbContext
+    public class UsersContext : DbContext
     {
-        public MvcUsersContex (DbContextOptions<MvcUsersContex> options)
+        public UsersContext (DbContextOptions<UsersContext> options)
             : base(options)
         {
         }
 
-        public DbSet<BelajarWebKP.Models.UsersModel> UsersModel { get; set; }
+        public DbSet<BelajarWebKP.Models.Users> Users { get; set; }
     }
 }
